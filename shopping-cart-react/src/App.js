@@ -1,8 +1,11 @@
 import './App.css';
+import Items from './Items';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1> Computador </h1>
+      <Items />
     </div>
   );
 }
