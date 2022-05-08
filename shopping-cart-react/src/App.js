@@ -1,12 +1,18 @@
 import './App.css';
 import Items from './Items';
+import Cart from './Cart';
+import Header from './Header';
+import objetoComputado from './search'
 
 function App() {
   return (
-    <div>
-      <h1> Computador </h1>
-      <Items />
-    </div>
+    <>
+      <Header />
+      <section className='container'>
+        <Items data={objetoComputado.results} />
+        <Cart />
+      </section>
+    </>
   );
 }
 

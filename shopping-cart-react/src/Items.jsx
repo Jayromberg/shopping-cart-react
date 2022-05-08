@@ -1,13 +1,13 @@
 import React from "react";
 import Card from './Card';
-import objetoComputado from './search'
 
 class Items extends React.Component {
     render(){
+        const { data } = this.props
         return(
-            <div className="itemsShop">
-                {objetoComputado.results.map((item) =>  <Card computador = {item} />)}
-            </div>
+            <section className="items">
+                {data.map((item) =>  <Card key={item.id} computador = {item} />)}
+            </section>
         )
     }
 }
