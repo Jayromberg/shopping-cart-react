@@ -1,7 +1,7 @@
 import './App.css';
-import Items from './Items';
-import Cart from './Cart';
-import Header from './Header';
+import Items from './components/Items';
+import Cart from './components/Cart';
+import Header from './components/Header';
 import objetoComputado from './search'
 
 function App() {
